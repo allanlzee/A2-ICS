@@ -1,5 +1,5 @@
 # Quadratic Solver
-# Solves for the roots of the standard quadratic equation, ax² + bx + c = 0    #
+# Solves for the roots of the standard quadratic equation, ax² + bx + c = 0    
 # using the quadratic formula to solve for the roots and the discriminant to 
 # determine the number of roots the equation has.
 # Author: Allan Zhou 
