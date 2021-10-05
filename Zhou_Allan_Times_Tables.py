@@ -1,17 +1,19 @@
 # Times Tables
-# Generates a multiplication table from two integers, given by the user. 
-# The maximum number of rows is 20 and the maximum number of columns is
-# 15. 
+# Generates a multiplication table from two positive integers, 
+# given by the user. The maximum number of rows is 20 and the
+# maximum number of columns is 15. 
 # Author: Allan Zhou 
 
 print("TIMES TABLE\n")
 
 MAX_ROWS = 20 
 MAX_COLUMNS = 15
-PADDING = 5  # Spacing around each number of the times table.
+
+# Spacing around each number of the times table.
+PADDING = 5
 
 # Ensure that the user enters an integer. Keep asking for input until 
-# user enters integer. 
+# user enters integer values for rows and columns. 
 while True: 
     try: 
         rows = int(input("Enter the number of rows (maximum is 20): "))
@@ -37,29 +39,29 @@ while True:
         elif columns <= 0: 
             print("Please input a positive integer for columns.\n")
             continue
-
+        
+        # While Loop ends when valid input is entered.
         break
 
     except ValueError:  
         print("Not an integer! Try again.\n")
 
-print()
-print("Multiplication Table of {} by {}.\n".format(rows, columns)) 
+print("\nMultiplication Table of {} by {}.\n".format(rows, columns)) 
 
 # Each column has a width of 5. These spaces align the row of dashes
-# with the columns of numbers. 
-print(" " * PADDING, end='') 
+# with the columns of numbers, since the column is reserved for row numbers.
+print(" "*PADDING, end='') 
 
 # Print the numbers 1 to columns, including columns itself. 
 for i in range(1, columns + 1): 
     print("{:{width}}".format(i, width=PADDING), end='')
 
 # Print 5 dashes per column on the line below, since each column 
-# has a width of 5 (add 5 spaces before to align dashes with numbers). 
-print("\n" + " " * PADDING + "-" * PADDING * columns) 
+# has a width of 5. The first column has no dashes, so print spaces. 
+print("\n" + " "*PADDING + "-"*PADDING*columns) 
 
 # Print the row number and all the multiples up to the nth multiple,
-# where n is the column number, all with a spacing of 5. "i" represents
+# where n is the column number, all with spacing. "i" represents
 # the row number and "j" represents the column number.
 for i in range(1, rows + 1): 
 
@@ -67,10 +69,10 @@ for i in range(1, rows + 1):
     # after the row number. 
     print("{:{width}} |".format(i, width=PADDING-2), end='')
 
-    # The number being printed will be row number x column number. 
     for j in range(1, columns + 1):
         print("{:{width}}".format(i * j, width=PADDING), end='')
 
-    print() # Move to next row of numbers.
+    # Move to next row of numbers.
+    print() 
 
 print()
