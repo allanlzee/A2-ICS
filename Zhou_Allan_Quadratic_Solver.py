@@ -1,7 +1,7 @@
 # Quadratic Solver
 # Solves for the roots of the standard quadratic equation, ax² + bx + c = 0    
-# using the quadratic formula to solve for the roots and the discriminant to 
-# determine the number of roots the equation has.
+# using the quadratic formula to solve for the roots (rounded to 2 decimal 
+# places) and the discriminant to determine the number of roots.
 # Author: Allan Zhou 
 
 from math import sqrt 
