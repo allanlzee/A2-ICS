@@ -28,6 +28,7 @@ while run == "y" or run == "yes":
 
     if discriminant > 0: 
         print("There are two solutions.")
+
         # The quadratic formula with a discriminant greater 0 has two roots: 
         # -b + sqrt(b**2 - 4*a*c) / (2 * a) 
         # -b - sqrt(b**2 - 4*a*c) / (2 * a)
@@ -41,12 +42,12 @@ while run == "y" or run == "yes":
         print("There is one solution.")
 
         # The quadratic formula with a discriminant of 0 returns one root, 
-        # -b / (2 * a) 
+        # -b / (2 * a), since sqrt(discriminant) will return 0. 
         first_root = -b / (2 * a) 
         print("The root is {:.2f}.".format(first_root))
 
     else: 
-        # When the discriminant is negative, we get an imaginary root. 
+        # When the discriminant is negative, we get imaginary roots. 
         print("There are no (real) solutions.")
 
     run = input("\nAnother? (y)es or (n)o: ")
