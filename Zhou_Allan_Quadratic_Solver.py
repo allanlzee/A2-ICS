@@ -8,13 +8,14 @@ from math import sqrt
 
 print("QUADRATIC SOLVER")
 
-# Until run == 'n', the program will keep running. 
+# Until run is not "y" or "yes", the program will keep running. 
 run = "y"
 
 while run == "y" or run == "yes": 
     print("\nEnter the values of a, b, and c from a quadratic equation", \
     "ax² + bx + c = 0:")
 
+    # Assume the user enters a valid input
     a = float(input("a = "))
     b = float(input("b = "))
     c = float(input("c = "))
@@ -42,12 +43,13 @@ while run == "y" or run == "yes":
         print("There is one solution.")
 
         # The quadratic formula with a discriminant of 0 returns one root, 
-        # -b / (2 * a), since sqrt(discriminant) will return 0. 
+        # -b / (2 * a), since the square root of 0 is 0. 
         first_root = -b / (2 * a) 
         print("The root is {:.2f}.".format(first_root))
 
     else: 
-        # When the discriminant is negative, we get imaginary roots. 
+        # When the discriminant is negative, we get imaginary roots, 
+        # which returns a math domain error in Python. 
         print("There are no (real) solutions.")
 
     run = input("\nAnother? (y)es or (n)o: ")
