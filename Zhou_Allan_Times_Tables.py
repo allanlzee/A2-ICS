@@ -59,7 +59,7 @@ for i in range(1, columns + 1):
 # Print 5 dashes per column on the line below, since each column 
 # has a width of 5. The first column has no dashes, so print spaces. 
 print("\n" + " "*PADDING + "-"*PADDING*columns) 
-
+ 
 # Print the row number and all the multiples up to the nth multiple,
 # where n is the column number, all with spacing. "i" represents
 # the row number and "j" represents the column number.
