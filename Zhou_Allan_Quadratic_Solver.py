@@ -25,14 +25,14 @@ while run == "y" or run == "yes":
     # there will be 2 real roots. If it is equal to 0, there is 1 real root.
     # Otherwise, there are no real roots. 
 
-    discriminant = b ** 2 - 4 * a * c 
+    discriminant = b**2 - 4*a*c 
 
     if discriminant > 0: 
         print("There are two solutions.")
 
         # The quadratic formula with a discriminant greater 0 has two roots: 
-        # -b + sqrt(b**2 - 4*a*c) / (2 * a) 
-        # -b - sqrt(b**2 - 4*a*c) / (2 * a)
+        # -b + sqrt(b² - 4ac) / (2a) 
+        # -b - sqrt(b² - 4ac) / (2a)
         first_root = (-b + sqrt(discriminant)) / (2 * a)
         second_root = (-b - sqrt(discriminant)) / (2 * a)
 
@@ -43,7 +43,7 @@ while run == "y" or run == "yes":
         print("There is one solution.")
 
         # The quadratic formula with a discriminant of 0 returns one root, 
-        # -b / (2 * a), since the square root of 0 is 0. 
+        # -b / (2a), since the square root of 0 is 0. 
         first_root = -b / (2 * a) 
         print("The root is {:.2f}.".format(first_root))
 
