@@ -1,18 +1,19 @@
 # Quadratic Solver
 # Solves for the roots of the standard quadratic equation, ax² + bx + c = 0    
-# using the quadratic formula to solve for the roots (rounded to 2 decimal 
-# places) and the discriminant to determine the number of roots.
+# using the quadratic formula ((-b +- sqrt(b² - 4ac)) / (2a))to solve for the
+# roots (rounded to 2 decimal places) and the discriminant to determine the 
+# number of roots.
 # Author: Allan Zhou 
 
 from math import sqrt 
 
-print("QUADRATIC SOLVER")
+print("QUADRATIC SOLVER\n")
 
 # Until run is not "y" or "yes", the program will keep running. 
 run = "y"
 
 while run == "y" or run == "yes": 
-    print("\nEnter the values of a, b, and c from a quadratic equation", \
+    print("Enter the values of a, b, and c from a quadratic equation", \
     "ax² + bx + c = 0:")
 
     # Assume the user enters a valid input
