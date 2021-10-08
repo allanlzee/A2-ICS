@@ -2,7 +2,7 @@
 # Solves for the roots of the standard quadratic equation, ax² + bx + c = 0    
 # using the quadratic formula ((-b ± √(b² - 4ac)) / (2a)) to solve for the
 # roots (rounded to 2 decimal places) and the discriminant to determine the 
-# number of roots.
+# number of real roots.
 # Author: Allan Zhou 
 
 from math import sqrt 
