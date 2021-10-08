@@ -72,5 +72,3 @@ for i in range(1, rows + 1):
         print("{:{width}}".format(i * j, width=PADDING), end='')
 
     print() 
-
-print()
